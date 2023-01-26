@@ -5,7 +5,8 @@ import Footer from "./parts/Footer";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./views/Home";
-import APropos from "./views/About";
+import About from "./views/About";
+import Rental from "./views/Rental";
 import ErrorPage from "./views/ErrorPage";
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<APropos />} />
-        <Route path="/rentals/:id" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="/rentals/:id" element={<Rental />} />
 
         <Route path="/*" element={<ErrorPage />} />
       </Routes>

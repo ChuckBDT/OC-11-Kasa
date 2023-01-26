@@ -8,7 +8,6 @@ body {
   color:#FF6060;
 }
 
-
 .txt-color-secondary {
   color:#F6F6F6;
 }
@@ -20,7 +19,6 @@ body {
 .bg-color-primary {
   background-color:#FF6060;
 }
-
 
 .bg-color-secondary {
   background-color:#F6F6F6;
@@ -37,8 +35,4 @@ body {
   height: auto;
   transition: all 0.5s cubic-bezier(1,0,1,0);
 
-}
-
-.chevron {
-  
 }

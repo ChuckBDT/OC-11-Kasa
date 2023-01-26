@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 function LocationThumb(props) {
   // Todo : Gradient ON pictures, space between elements
   return (
-    <Link className="rounded-3xl relative w-full " to={`/rentals/${props.id}`}>
+    <Link
+      className="rounded-3xl relative w-full h-[21rem]"
+      to={`/rentals/${props.id}`}
+    >
       <img
-        className="w-full h-56 object-cover rounded-3xl bg-gradient-to-b from-black/0 to-black/50"
+        className="w-full h-full h-56 object-cover rounded-3xl bg-gradient-to-b from-black/0 to-black/50"
         src={props.img}
         alt={props.alt}
       />

@@ -38,7 +38,12 @@ export default function APropos() {
       <Banner picture={AboutBanner} />
       {items.map((item) => {
         return (
-          <DropdownText key={item.id} title={item.title} text={item.text} />
+          <DropdownText
+            key={item.id}
+            title={item.title}
+            text={item.text}
+            widthClass="w-2/3"
+          />
         );
       })}
     </div>

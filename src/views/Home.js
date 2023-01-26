@@ -4,7 +4,7 @@ import datas from "../datas/logements.json";
 
 import Banner from "../components/Banner";
 import HomeBanner from "../assets/pictures/home/home_banner.webp";
-import LocationThumb from "../components/LocationThumb";
+import LocationThumb from "../components/RentalThumb";
 
 const Home = () => {
   // Todo: Add text on picture ?
