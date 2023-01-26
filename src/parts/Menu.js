@@ -7,7 +7,7 @@ const Menu = () => {
       <Link className=" block w-1/2" to="/">
         Accueil
       </Link>
-      <Link className="block w-1/2" to="a-propos">
+      <Link className="block w-1/2" to="about">
         À propos
       </Link>
     </nav>

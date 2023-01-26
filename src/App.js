@@ -5,7 +5,7 @@ import Footer from "./parts/Footer";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./views/Home";
-import APropos from "./views/APropos";
+import APropos from "./views/About";
 import ErrorPage from "./views/ErrorPage";
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="a-propos" element={<APropos />} />
+        <Route path="about" element={<APropos />} />
+        <Route path="/rentals/:id" element={<Home />} />
 
         <Route path="/*" element={<ErrorPage />} />
       </Routes>

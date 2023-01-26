@@ -1,8 +1,8 @@
-import React from "react";
-import AboutHero from "../assets/pictures/about/about_hero.webp";
+import React, { useState } from "react";
 
+import Banner from "../components/Banner";
+import AboutBanner from "../assets/pictures/about/banner.webp";
 import DropdownText from "../components/DropdownText";
-import { useState } from "react";
 
 export default function APropos() {
   // ToDo: IMG -> PICTURE
@@ -35,11 +35,7 @@ export default function APropos() {
 
   return (
     <div className="flex flex-col justify-center items-center gap-y-8 text-2xl mb-8">
-      <img
-        className="h-56 w-full object-cover rounded-3xl"
-        src={AboutHero}
-        alt=""
-      />
+      <Banner picture={AboutBanner} />
       {items.map((item) => {
         return (
           <DropdownText key={item.id} title={item.title} text={item.text} />
