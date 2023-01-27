@@ -29,15 +29,17 @@ function DropdownList(props) {
             }
           />
         </div>
-        <p
+        <ul
           className={
             opened
-              ? "content bg-color-secondary txt-color-primary rounded-b leading-8 font-normal px-7 about-text show"
-              : "content bg-color-secondary txt-color-primary rounded-b leading-8 font-normal px-7 about-text"
+              ? "content bg-color-secondary txt-color-primary rounded-b leading-6 font-normal px-7 about-text show"
+              : "content bg-color-secondary txt-color-primary rounded-b leading-6 font-normal px-7 about-text"
           }
         >
-          {props.text}
-        </p>
+          {props.list.map((li, index) => {
+            return <li key={index}>{li}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main>
       <Banner picture={HomeBanner} />
-      <section className="w-full rounded-3xl bg-color-secondary p-8 grid grid-cols-3 gap-y-3 gap-x-4">
+      <section className="w-full rounded-3xl bg-color-secondary p-8 grid grid-cols-3 gap-y-8 gap-x-9">
         {datas.map((data) => (
           <LocationThumb
             key={data.id}
