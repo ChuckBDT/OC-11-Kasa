@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function Gallery(props) {
-  //Todo: Check the size of chevron
   const pictures = props.pictures;
 
   let [currentDisplayed, setDisplayed] = useState(0);

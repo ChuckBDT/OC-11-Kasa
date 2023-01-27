@@ -7,8 +7,6 @@ import HomeBanner from "../assets/pictures/home/home_banner.webp";
 import RentalThumb from "../components/RentalThumb";
 
 const Home = () => {
-  // Todo: Add text on picture ?
-
   return (
     <main className="px-5 mb-3 h-full">
       <HommeBanner picture={HomeBanner} text={true} />
