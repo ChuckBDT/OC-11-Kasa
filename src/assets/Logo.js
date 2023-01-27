@@ -3,9 +3,9 @@ import React from "react";
 const Logo = (props) => {
   return (
     <svg
-      className="my-6"
-      height={`${props.height}rem`}
-      width={`${props.height * 3}rem`}
+      className={props.className}
+      height="122"
+      width="40"
       viewBox="0 0 122 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

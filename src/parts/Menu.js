@@ -2,13 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Menu = () => {
+  //Todo: active under
   return (
-    <nav className="w-80 text-2xl flex text-end">
+    <nav className="w-40 text-xs font-medium flex text-end">
       <NavLink className=" block w-1/2" to="/">
-        Accueil
+        ACCUEIL
       </NavLink>
       <NavLink className="block w-1/2" to="about">
-        À propos
+        À PROPOS
       </NavLink>
     </nav>
   );

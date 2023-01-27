@@ -16,32 +16,32 @@ function Rental() {
   const displayedData = data[0];
 
   return (
-    <main className="w-full ">
+    <main className="w-full h-full px-5">
       {displayedData.pictures.length > 1 ? (
         <Gallery pictures={displayedData.pictures} />
       ) : (
         <img
-          className="w-full object-cover rounded-3xl h-96 mb-7"
+          className="w-full object-cover rounded-xl h-64 mb-3"
           src={displayedData.pictures[0]}
           alt={displayedData.title}
         />
       )}
 
-      <div className="w-full flex txt-color-primary">
-        <div className="w-4/5">
-          <h1 className="text-4xl font-medium">{displayedData.title}</h1>
-          <p className="text-lg font-medium mt-2">{displayedData.location}</p>
-          <div className="flex gap-x-2.5 my-6">
+      <div className="w-full flex flex-col txt-color-primary">
+        <div className="font-medium mb-3">
+          <h1 className="text-lg mb-2">{displayedData.title}</h1>
+          <p className="text-sm mb-3">{displayedData.location}</p>
+          <div className="flex flex-wrap gap-2.5 ">
             {displayedData.tags.map((tag, index) => (
               <RentalTag tag={tag} key={index} />
             ))}
           </div>
         </div>
-        <div className="w-1/5">
+        <div className="flex flex-row-reverse justify-between items-center mb-3">
           <div className="flex justify-end items-center h-1/2">
-            <p className="text-lg">{displayedData.host.name}</p>
+            <p className="text-sm font-medium">{displayedData.host.name}</p>
             <img
-              className="rounded-full object-cover w-16 h-16 ml-3"
+              className="rounded-full object-cover w-9 h-9 ml-2"
               src={displayedData.host.picture}
               alt={displayedData.host.name}
             />
@@ -51,9 +51,17 @@ function Rental() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 w-full mb-4">
-        <DropdownText title="Description" text={displayedData.description} />
-        <DropdownList title="Équipements" list={displayedData.equipments} />
+      <div className="grid grid-cols-1 gap-y-5 w-full h-fit mb-8">
+        <DropdownText
+          title="Description"
+          text={displayedData.description}
+          widthClass=""
+        />
+        <DropdownList
+          title="Équipements"
+          list={displayedData.equipments}
+          widthClass=""
+        />
       </div>
     </main>
   );

@@ -13,34 +13,34 @@ function DropdownList(props) {
   };
 
   return (
-    <div className="accordion">
-      <div className="item ">
-        <div
-          className="title bg-color-primary text-white flex justify-between items-center rounded font-medium h-12 px-4 cursor-pointer"
-          onClick={toggle}
-        >
-          <h2>{props.title}</h2>
-          <Chevron
-            color="white"
-            opened={
-              opened
-                ? "chevron rotate-180 transition-transform"
-                : "chevron rotate-0 transition-transform"
-            }
-          />
-        </div>
-        <ul
-          className={
+    <div className={`accordion ${props.widthClass}`}>
+      <div
+        className="title text-sm bg-color-primary text-white flex justify-between items-center rounded font-medium h-8 px-3 cursor-pointer"
+        onClick={toggle}
+      >
+        <h2>{props.title}</h2>
+        <Chevron
+          color="white"
+          opened={
             opened
-              ? "content bg-color-secondary txt-color-primary rounded-b leading-6 font-normal px-7 about-text show"
-              : "content bg-color-secondary txt-color-primary rounded-b leading-6 font-normal px-7 about-text"
+              ? "chevron rotate-180 transition-transform h-4 w-4"
+              : "chevron rotate-0 transition-transform h-4 w-4"
           }
-        >
-          {props.list.map((li, index) => {
-            return <li key={index}>{li}</li>;
-          })}
-        </ul>
+        />
       </div>
+      <ul
+        className={
+          opened
+            ? "content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs px-3 about-text show"
+            : "content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs px-3 about-text"
+        }
+      >
+        <br />
+        {props.list.map((li, index) => {
+          return <li key={index}>{li}</li>;
+        })}
+        <br />
+      </ul>
     </div>
   );
 }

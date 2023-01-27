@@ -7,10 +7,12 @@ import { colors } from "../assets/Colors";
 import Menu from "./Menu";
 
 const Header = () => {
+  //Todo: Colors txt-color-primary
+  // Header height issue
   return (
-    <header className="bg-white txt-color-primary flex justify-between items-center h-40 text-2xl">
+    <header className="txt-color-primary flex justify-between items-center h-40 text-2xl px-5">
       <Link to="/">
-        <Logo color={colors.primary} height={4.25} />
+        <Logo className="h-11 w-32" color={colors.primary} />
       </Link>
 
       <Menu />

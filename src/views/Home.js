@@ -2,19 +2,19 @@ import React from "react";
 
 import datas from "../datas/logements.json";
 
-import Banner from "../components/Banner";
+import HommeBanner from "../components/HomeBanner";
 import HomeBanner from "../assets/pictures/home/home_banner.webp";
-import LocationThumb from "../components/RentalThumb";
+import RentalThumb from "../components/RentalThumb";
 
 const Home = () => {
   // Todo: Add text on picture ?
 
   return (
-    <main>
-      <Banner picture={HomeBanner} />
-      <section className="w-full rounded-3xl bg-color-secondary p-8 grid grid-cols-3 gap-y-8 gap-x-9">
+    <main className="px-5 mb-3 h-full">
+      <HommeBanner picture={HomeBanner} text={true} />
+      <section className="w-full grid grid-cols-1 my-5 gap-y-5">
         {datas.map((data) => (
-          <LocationThumb
+          <RentalThumb
             key={data.id}
             id={data.id}
             img={data.cover}

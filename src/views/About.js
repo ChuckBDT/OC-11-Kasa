@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import Banner from "../components/Banner";
-import AboutBanner from "../assets/pictures/about/banner.webp";
+import AboutBanner from "../components/AboutBanner";
+import AboutBannerImg from "../assets/pictures/about/banner.webp";
 import DropdownText from "../components/DropdownText";
 
-export default function APropos() {
+export default function About() {
   // ToDo: IMG -> PICTURE
   // IMG BG BLEND ?
   // Padding inside texts
@@ -34,15 +34,15 @@ export default function APropos() {
   ]);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-y-8 text-2xl mb-8">
-      <Banner picture={AboutBanner} />
+    <div className="flex flex-col justify-center items-center px-5 gap-y-5 mb-8 h-full">
+      <AboutBanner picture={AboutBannerImg} />
       {items.map((item) => {
         return (
           <DropdownText
             key={item.id}
             title={item.title}
             text={item.text}
-            widthClass="w-2/3"
+            widthClass="w-full"
           />
         );
       })}
