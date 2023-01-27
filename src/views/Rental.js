@@ -3,12 +3,11 @@ import { useParams } from "react-router-dom";
 
 import datas from "../datas/logements.json";
 
-import { colors } from "../assets/Colors";
 import DropdownList from "../components/DropdownList";
 import DropdownText from "../components/DropdownText";
 import RentalTag from "../components/RentalTag";
-import Star from "../assets/Star";
 import Gallery from "../components/Gallery";
+import RatingStar from "../components/RatingStar";
 
 function Rental() {
   //Todo: Verify lineheight dropdowns
@@ -48,13 +47,7 @@ function Rental() {
             />
           </div>
           <div className="flex justify-end items-center h-1/2 gap-x-2">
-            {[
-              <Star color={colors.grey} />,
-              <Star color={colors.grey} />,
-              <Star color={colors.grey} />,
-              <Star color={colors.grey} />,
-              <Star color={colors.grey} />,
-            ].fill(<Star color={colors.primary} />, 0, displayedData.rating)}
+            <RatingStar rate={displayedData.rating} />
           </div>
         </div>
       </div>
