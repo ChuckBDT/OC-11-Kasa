@@ -13,7 +13,7 @@ function DropdownList(props) {
   };
 
   return (
-    <div className={`accordion ${props.widthClass}`}>
+    <div className={`accordion h-fit ${props.widthClass}`}>
       <div
         className="title text-sm bg-color-primary text-white flex justify-between items-center rounded font-medium h-8 px-3 cursor-pointer"
         onClick={toggle}

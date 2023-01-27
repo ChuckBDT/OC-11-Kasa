@@ -9,7 +9,7 @@ function HomeBanner(props) {
         alt=""
       />
       {props.text ? (
-        <p className="absolute left-4 text-white font-medium text-2xl">
+        <p className="absolute left-4 leading-6 text-white font-medium text-2xl">
           Chez vous,
           <br />
           partout et ailleurs

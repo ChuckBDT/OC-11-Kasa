@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import AboutBanner from "../components/AboutBanner";
 import AboutBannerImg from "../assets/pictures/about/banner.webp";
@@ -6,9 +6,10 @@ import DropdownText from "../components/DropdownText";
 
 export default function About() {
   // ToDo: IMG -> PICTURE
-  // IMG BG BLEND ?
-  // Padding inside texts
-  // Content stretch
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [items, setItems] = useState([
     {

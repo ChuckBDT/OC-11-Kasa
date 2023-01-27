@@ -6,10 +6,9 @@ import KasaRoutes from "./router/Routes";
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col">
+    <div className="h-full">
       <Header />
       <KasaRoutes />
-
       <Footer />
     </div>
   );

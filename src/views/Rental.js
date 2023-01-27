@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import datas from "../datas/logements.json";
@@ -10,10 +10,13 @@ import Gallery from "../components/Gallery";
 import RatingStar from "../components/RatingStar";
 
 function Rental() {
-  //Todo: Verify lineheight dropdowns
   const urlId = useParams().id;
   const data = datas.filter((data) => data.id === urlId);
   const displayedData = data[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="w-full h-full px-5">
