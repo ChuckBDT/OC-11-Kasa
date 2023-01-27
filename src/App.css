@@ -16,10 +16,6 @@ body {
   color:#F6F6F6;
 }
 
-.text-18rem {
-  font-size: 18rem;
-}
-
 .bg-color-primary {
   background-color:#FF6060;
 }
@@ -38,5 +34,15 @@ body {
   max-height: 9999px;
   height: auto;
   transition: all 0.5s cubic-bezier(1,0,1,0);
+}
 
+.thumbGradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 40%);
+  border-radius: 0.75rem;
 }

@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function LocationThumb(props) {
-  // Todo : Gradient ON pictures
+function RentalThumb(props) {
   return (
     <Link
-      className="rounded-xl relative w-full h-64"
+      className="thumbGradient rounded-xl relative w-full h-64"
       to={`/rentals/${props.id}`}
     >
       <img
-        className="w-full h-full object-cover rounded-xl"
+        className=" w-full h-full object-cover rounded-xl"
         src={props.img}
         alt={props.alt}
       />
@@ -20,4 +19,4 @@ function LocationThumb(props) {
   );
 }
 
-export default LocationThumb;
+export default RentalThumb;

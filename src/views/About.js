@@ -5,8 +5,6 @@ import AboutBannerImg from "../assets/pictures/about/banner.webp";
 import DropdownText from "../components/DropdownText";
 
 export default function About() {
-  // ToDo: IMG -> PICTURE
-
   const [items, setItems] = useState([
     {
       id: 0,
