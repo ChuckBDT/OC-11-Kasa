@@ -8,7 +8,7 @@ function Gallery(props) {
   let [currentDisplayed, setDisplayed] = useState(0);
 
   return (
-    <div className="h-96 w-full relative flex items-center">
+    <div className="h-96 w-full relative flex items-center justify-center mb-7">
       <svg
         className="chevron -rotate-90 absolute  h-20 w-12 right-4 z-10"
         viewBox="0 0 25 15"
@@ -41,7 +41,7 @@ function Gallery(props) {
           fill="white"
         />
       </svg>
-      <p className="text-white z-10 absolute bottom-5 self-center">
+      <p className="text-white text-lg font-medium z-10 absolute bottom-4">
         {currentDisplayed + 1}/{pictures.length}
       </p>
       <img

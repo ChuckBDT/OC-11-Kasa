@@ -22,7 +22,7 @@ function Rental() {
         <Gallery pictures={displayedData.pictures} />
       ) : (
         <img
-          className="w-full object-cover rounded-3xl h-96 mb-9"
+          className="w-full object-cover rounded-3xl h-96 mb-7"
           src={displayedData.pictures[0]}
           alt={displayedData.title}
         />
