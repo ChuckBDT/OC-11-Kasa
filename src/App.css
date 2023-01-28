@@ -46,3 +46,11 @@ body {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 40%);
   border-radius: 0.75rem;
 }
+
+/* Those media queries are fixing missing rules from TailWindCSS CDN */
+
+@media (min-width: 1280px) { 
+  .bg-color-secondary {
+    background-color:#F6F6F6;
+  }
+}

@@ -39,8 +39,7 @@ function Gallery(props) {
           fill="white"
         />
       </svg>
-      <p className="hidden ">
-        {/* Responsive : text-white text-lg font-medium z-10 absolute bottom-4 */}
+      <p className="hidden xl:block xl:text-white xl:text-lg xl:font-medium xl:z-10 xl:absolute xl:bottom-4">
         {currentDisplayed + 1}/{pictures.length}
       </p>
       <img
