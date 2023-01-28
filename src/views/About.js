@@ -29,7 +29,7 @@ export default function About() {
   ]);
 
   return (
-    <div className="flex flex-col justify-center items-center px-5 gap-y-5 mb-8 h-full">
+    <div className="flex flex-col justify-center items-center px-5 xl:px-24 gap-y-5 xl:gap-y-8 mb-8 h-full">
       <AboutBanner picture={AboutBannerImg} />
       {items.map((item) => {
         return (
@@ -37,7 +37,7 @@ export default function About() {
             key={item.id}
             title={item.title}
             text={item.text}
-            widthClass="w-full"
+            widthClass="w-full xl:w-10/12"
           />
         );
       })}
