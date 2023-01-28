@@ -8,6 +8,7 @@ import Rental from "../views/Rental";
 import ErrorPage from "../views/ErrorPage";
 
 function KasaRoutes() {
+  //Todo: redirect 404 when rentals/wrong ?
   return (
     <Routes>
       <Route path="/" element={<Home />} />

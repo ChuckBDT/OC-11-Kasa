@@ -15,7 +15,7 @@ const Home = () => {
         text={true}
         className="mb-5 xl:mb-11"
       />
-      <section className="w-full grid grid-cols-1 xl:grid-cols-3 gap-y-5 xl:gap-14 bg-color-primary xl:py-14 xl:px-12 xl:rounded-3xl">
+      <section className="w-full grid grid-cols-1 xl:grid-cols-3 gap-y-5 xl:gap-14 xl:bg-color-primary xl:py-14 xl:px-12 xl:rounded-3xl">
         {datas.map((data) => (
           <RentalThumb
             key={data.id}
