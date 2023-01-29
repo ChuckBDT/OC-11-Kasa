@@ -3,7 +3,7 @@ import React from "react";
 function Star(props) {
   return (
     <svg
-      className="h-4 w-4"
+      className="h-4 xl:h-7 w-4 xl:w-7"
       viewBox="0 0 30 30"
       xmlns="http://www.w3.org/2000/svg"
     >

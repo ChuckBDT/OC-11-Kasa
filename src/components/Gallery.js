@@ -6,7 +6,7 @@ function Gallery(props) {
   let [currentDisplayed, setDisplayed] = useState(0);
 
   return (
-    <div className="h-64 h-104 w-full relative flex items-center justify-center mb-3">
+    <div className="h-64 h-104 w-full relative flex items-center justify-center mb-3 xl:mb-9">
       <svg
         className="chevron -rotate-90 absolute h-6 xl:h-20 w-6 xl:w-20 right-4 xl:right-3 z-10"
         viewBox="0 0 25 15"
