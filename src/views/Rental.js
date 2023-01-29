@@ -19,12 +19,12 @@ function Rental() {
   }, []);
 
   return (
-    <main className="w-full h-full px-5">
+    <main className="w-full h-full px-5 xl:px-24 mb-8 xl:mb-16">
       {displayedData.pictures.length > 1 ? (
         <Gallery pictures={displayedData.pictures} />
       ) : (
         <img
-          className="w-full object-cover rounded-xl h-64 mb-3"
+          className="w-full object-cover rounded-xl xl:rounded-3xl h-64 h-104 mb-3"
           src={displayedData.pictures[0]}
           alt={displayedData.title}
         />
@@ -54,7 +54,7 @@ function Rental() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-y-5 w-full h-fit mb-8">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-5 xl:gap-x-20 w-full h-fit ">
         <DropdownText
           title="Description"
           text={displayedData.description}

@@ -6,9 +6,9 @@ function Gallery(props) {
   let [currentDisplayed, setDisplayed] = useState(0);
 
   return (
-    <div className="h-64 w-full relative flex items-center justify-center mb-3">
+    <div className="h-64 h-104 w-full relative flex items-center justify-center mb-3">
       <svg
-        className="chevron -rotate-90 absolute h-6 w-6 right-4 z-10"
+        className="chevron -rotate-90 absolute h-6 xl:h-20 w-6 xl:w-20 right-4 xl:right-3 z-10"
         viewBox="0 0 25 15"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function Gallery(props) {
         />
       </svg>
       <svg
-        className="chevron rotate-90 absolute h-6 w-6 left-4 z-10"
+        className="chevron rotate-90 absolute xl:h-20 w-6 xl:w-20 left-4 xl:left-3 z-10"
         viewBox="0 0 25 15"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ function Gallery(props) {
         {currentDisplayed + 1}/{pictures.length}
       </p>
       <img
-        className="object-cover h-full w-full absolute rounded-xl "
+        className="object-cover h-full w-full absolute rounded-xl xl:rounded-3xl"
         src={pictures[currentDisplayed]}
         alt=""
       />
