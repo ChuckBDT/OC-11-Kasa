@@ -11,7 +11,7 @@ function HomeBanner(props) {
         alt=""
       />
       {props.text ? (
-        <p className="absolute max-xl:left-4 xl:left-none leading-6 text-white font-medium text-2xl xl:text-5xl">
+        <p className="absolute max-xl:px-5 xl:left-none leading-6 text-white font-medium text-2xl xl:text-5xl">
           Chez vous, partout et ailleurs
         </p>
       ) : null}
