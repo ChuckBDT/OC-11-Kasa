@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+:root {
+  --primary-color: #FF6060;
+  --secondary-color: #F6F6F6;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -14,21 +19,7 @@ body {
   text-decoration: underline;
 }
 
-.txt-color-primary {
-  color:#FF6060;
-}
-
-.txt-color-secondary {
-  color:#F6F6F6;
-}
-
-.bg-color-primary {
-  background-color:#FF6060;
-}
-
-.bg-color-secondary {
-  background-color:#F6F6F6;
-}
+/* Dropdown open / close transitions */
 
 .about-text {
   max-height: 0;
@@ -42,6 +33,8 @@ body {
   transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 
+/* Gradient effect on thumbnails from Home */ 
+
 .thumbGradient::before {
   content: '';
   position: absolute;
@@ -53,11 +46,28 @@ body {
   border-radius: 0.75rem;
 }
 
-/* Those media queries are fixing missing rules from TailWindCSS CDN */
+/* I'm not sure that i'm allowed to use TailwindCSS for this project */
+/* that's why i stayed with the CDN and wrote custom CSS rules below */
+
+.txt-color-primary {
+  color:var(--primary-color)
+}
+
+.txt-color-secondary {
+  color:var(--secondary-color)
+}
+
+.bg-color-primary {
+  background-color:var(--primary-color)
+}
+
+.bg-color-secondary {
+  background-color:var(--secondary-color)
+}
 
 @media (min-width: 1280px) { 
   .bg-color-secondary {
-    background-color:#F6F6F6;
+    background-color:var(--secondary-color)
   }
 
   .h-104 {
