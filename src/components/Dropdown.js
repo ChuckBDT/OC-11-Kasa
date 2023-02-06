@@ -31,8 +31,8 @@ function Dropdown(props) {
       <p
         className={
           opened
-            ? "content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs xl:text-2xl px-3 xl:px-5 about-text show"
-            : "content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs xl:text-2xl px-3 xl:px-5 about-text"
+            ? `content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs xl:${props.xlFontSize} px-3 xl:px-5 about-text show`
+            : `content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs xl:${props.xlFontSize} px-3 xl:px-5 about-text`
         }
       >
         <br />

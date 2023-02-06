@@ -62,11 +62,13 @@ function Rental() {
           title="Description"
           text={displayedData.description}
           widthClass=""
+          xlFontSize="text-lg"
         />
         <Dropdown
           title="Équipements"
           list={displayedData.equipments}
           widthClass=""
+          xlFontSize="text-lg"
         />
       </div>
     </main>

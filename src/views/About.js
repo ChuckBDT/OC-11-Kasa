@@ -38,6 +38,7 @@ export default function About() {
             title={item.title}
             text={item.text}
             widthClass="w-full xl:w-10/12"
+            xlFontSize="text-2xl"
           />
         );
       })}
