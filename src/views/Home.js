@@ -7,7 +7,6 @@ import HomeBannerPicture from "../assets/pictures/home/home_banner.webp";
 import RentalThumb from "../components/RentalThumb";
 
 const Home = () => {
-  // Todo: Fix custom class bg section issue
   return (
     <main className="grow mb-8 xl:mb-16 px-5 xl:px-24">
       <HomeBanner
