@@ -15,7 +15,7 @@ function Dropdown(props) {
   return (
     <div className={`accordion ${props.widthClass}`}>
       <div
-        className="title text-sm xl:text-2xl bg-color-primary text-white flex justify-between items-center rounded font-medium h-8 xl:h-12 px-3 xl:px-5 cursor-pointer"
+        className={`title text-sm xl:${props.xlFontSize} bg-color-primary text-white flex justify-between items-center rounded font-medium h-8 xl:h-12 px-3 xl:px-5 cursor-pointer`}
         onClick={toggle}
       >
         <h2>{props.title}</h2>
