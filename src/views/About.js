@@ -29,7 +29,7 @@ export default function About() {
   ]);
 
   return (
-    <div className="flex flex-col justify-center items-center px-5 xl:px-24 gap-y-5 xl:gap-y-8 mb-8 xl:mb-16 h-full">
+    <main className="flex flex-col justify-start items-center px-5 xl:px-24 gap-y-5 xl:gap-y-8 mb-8 xl:mb-16 grow">
       <AboutBanner picture={AboutBannerImg} />
       {items.map((item) => {
         return (
@@ -41,6 +41,6 @@ export default function About() {
           />
         );
       })}
-    </div>
+    </main>
   );
 }

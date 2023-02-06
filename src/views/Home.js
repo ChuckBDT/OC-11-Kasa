@@ -9,7 +9,7 @@ import RentalThumb from "../components/RentalThumb";
 const Home = () => {
   // Todo: Fix custom class bg section issue
   return (
-    <main className="h-full mb-8 xl:mb-16 px-5 xl:px-24">
+    <main className="grow mb-8 xl:mb-16 px-5 xl:px-24">
       <HomeBanner
         picture={HomeBannerPicture}
         text={true}

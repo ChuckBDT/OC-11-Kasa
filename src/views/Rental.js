@@ -19,7 +19,7 @@ function Rental() {
   }, []);
 
   return (
-    <main className="w-full h-full px-5 xl:px-24 mb-8 xl:mb-16">
+    <main className="w-full grow px-5 xl:px-24 mb-8 xl:mb-16">
       {displayedData.pictures.length > 1 ? (
         <Gallery pictures={displayedData.pictures} />
       ) : (
