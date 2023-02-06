@@ -3,8 +3,7 @@ import { useParams } from "react-router-dom";
 
 import datas from "../datas/logements.json";
 
-import DropdownList from "../components/DropdownList";
-import DropdownText from "../components/DropdownText";
+import Dropdown from "../components/Dropdown";
 import RentalTag from "../components/RentalTag";
 import Gallery from "../components/Gallery";
 import RatingStar from "../components/RatingStar";
@@ -59,12 +58,12 @@ function Rental() {
         </div>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-5 xl:gap-x-20 w-full h-fit ">
-        <DropdownText
+        <Dropdown
           title="Description"
           text={displayedData.description}
           widthClass=""
         />
-        <DropdownList
+        <Dropdown
           title="Équipements"
           list={displayedData.equipments}
           widthClass=""

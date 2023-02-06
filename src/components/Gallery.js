@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function Gallery(props) {
   const pictures = props.pictures;
-  console.log(pictures.length);
 
   let [currentDisplayed, setDisplayed] = useState(0);
 

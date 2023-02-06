@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Chevron from "../assets/Chevron";
 
-function DropdownList(props) {
+function Dropdown(props) {
   const [opened, setOpened] = useState(false);
 
   const toggle = () => {
@@ -13,7 +13,7 @@ function DropdownList(props) {
   };
 
   return (
-    <div className={`accordion  ${props.widthClass}`}>
+    <div className={`accordion ${props.widthClass}`}>
       <div
         className="title text-sm xl:text-2xl bg-color-primary text-white flex justify-between items-center rounded font-medium h-8 xl:h-12 px-3 xl:px-5 cursor-pointer"
         onClick={toggle}
@@ -28,7 +28,7 @@ function DropdownList(props) {
           }
         />
       </div>
-      <ul
+      <p
         className={
           opened
             ? "content bg-color-secondary txt-color-primary rounded-b leading-4 font-normal text-xs xl:text-2xl px-3 xl:px-5 about-text show"
@@ -36,13 +36,16 @@ function DropdownList(props) {
         }
       >
         <br />
-        {props.list.map((li, index) => {
-          return <li key={index}>{li}</li>;
-        })}
+        {props.text
+          ? props.text
+          : props.list.map((li, index) => {
+              return <li key={index}>{li}</li>;
+            })}
+        {props.text ? <br /> : null}
         <br />
-      </ul>
+      </p>
     </div>
   );
 }
 
-export default DropdownList;
+export default Dropdown;

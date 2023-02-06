@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import AboutBanner from "../components/AboutBanner";
 import AboutBannerImg from "../assets/pictures/about/banner.webp";
-import DropdownText from "../components/DropdownText";
+import Dropdown from "../components/Dropdown";
 
 export default function About() {
   const [items, setItems] = useState([
@@ -33,7 +33,7 @@ export default function About() {
       <AboutBanner picture={AboutBannerImg} />
       {items.map((item) => {
         return (
-          <DropdownText
+          <Dropdown
             key={item.id}
             title={item.title}
             text={item.text}
