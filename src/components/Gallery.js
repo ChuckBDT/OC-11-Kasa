@@ -45,7 +45,7 @@ function Gallery(props) {
       <img
         className="object-cover h-full w-full absolute rounded-xl xl:rounded-3xl"
         src={pictures[currentDisplayed]}
-        alt=""
+        alt={`${props.alt} - Illustration ${currentDisplayed + 1}`}
       />
     </div>
   );

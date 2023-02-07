@@ -12,10 +12,10 @@ function KasaRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="/about" element={<About />} />
       <Route path="/rentals/:id" element={<Rental />} />
 
-      <Route path="/*" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 }

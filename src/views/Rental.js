@@ -20,7 +20,7 @@ function Rental() {
   return (
     <main className="w-full grow px-5 xl:px-24 mb-8 xl:mb-16">
       {displayedData.pictures.length > 1 ? (
-        <Gallery pictures={displayedData.pictures} />
+        <Gallery pictures={displayedData.pictures} alt={displayedData.title} />
       ) : (
         <img
           className="w-full object-cover rounded-xl xl:rounded-3xl h-64 h-104 mb-3 xl:mb-9"
